@@ -6,7 +6,8 @@ import getDataUri from '../utils/datauri.js'
 import nodemailer from "nodemailer";
 import cloudinary from "cloudinary";
 import AdminRequest from '../models/SuperAdmin.js'
-
+import dotenv from "dotenv";
+dotenv.config();
 //register controller
 export const registerUser=async(req,res)=>{
  try {
