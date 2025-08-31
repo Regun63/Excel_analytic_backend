@@ -31,7 +31,7 @@ app.use('/api/excel/user',userRoute);
 app.use('/api/excel/upload',uploadRoute);
 app.use('/api/excel/superadmin', superAdminRoute);
 
-const PORT=process.env.PORT;
+const PORT=process.env.PORT||8000;
 app.listen(PORT,()=>{
     console.log(` your application is running at the http://localhost:${PORT}`);
 })
